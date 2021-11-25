@@ -61,7 +61,10 @@ class Color extends React.Component {
 
 ## Components from ```npm```
 
-There are premade components on the ```npm```, they will allow us to configure and customize them through the use of *props* 
+There are premade components on the ```npm```, they will allow us to configure and customize them through the use of *props*.
+
+``ReactPlayer`` doc on **npm**, for more details of use on *props* attributes as well as installation => https://www.npmjs.com/package/react-player .
+
 - To install the **react-player** npm package, use:
 ```
 npm install react-player
@@ -86,4 +89,4 @@ const App = () => {
 
 - Example of the rendered ReactPlayer on the DOM transpiled by Babel and React Library
 
-![ReactPlayer](assets/reactplayer_example.jpg) 
+![ReactPlayer](assets/reactplayer_example.jpg)

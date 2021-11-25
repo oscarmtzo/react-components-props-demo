@@ -5,6 +5,8 @@ import React from 'react';
 //{ReactPlayer} is a React component added as a npm package
 import ReactPlayer from 'react-player';
 
+//
+import Student from './components/Student';
 /**
  * @function {GreetingMessage} - is a functional component in React
  * @returns a JSX - JS with HTML
@@ -26,24 +28,24 @@ function WelcomeBlock() {
   )
 }
 
-function Student() {
-  const name = "Raul";
-  return(
-    <div>
-      <hr/>
-      <GreetingMessage/> my name is {name}
-    </div>
-  )
-}
+// function Student() {
+//   const name = "Raul";
+//   return(
+//     <div>
+//       <hr/>
+//       <GreetingMessage/> my name is {name}
+//     </div>
+//   )
+// }
 
 function ClassRoom() {
   return(
     <div>
       <hr/>
       This is the classroom with the following students:
-      <Student/>
-      <Student/>
-      <Student/>
+      <Student name="Erick" age="54"/>
+      <Student name="Sam" age="12"/>
+      <Student name="Victor" age="34"/>
 
     </div>
   )
@@ -92,6 +94,8 @@ class Color extends React.Component {
 const App = () => {
   return (
     <div className="App">
+      {/* Creation and usage of selfmade React component */}
+
       {/* usage of a component pre-build from npm */}
       <ReactPlayer url="https://vimeo.com/channels/top/22439234" playing/>
 
