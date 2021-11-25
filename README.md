@@ -58,3 +58,31 @@ class Color extends React.Component {
 }
 ```
 ```render()``` Returns: ```JSX JS with HTML```
+
+## Components from ```npm```
+
+There are premade components on the ```npm```, they will allow us to configure and customize them through the use of *props* 
+- To install the **react-player** npm package, use:
+```
+npm install react-player
+``` 
+- It needs and import statements inside the *src/App.js* file and use it as any other component:
+```
+//App.js
+import React from 'recat';
+
+//import React Player from the npm package
+import ReactPlayer from 'react-player';
+
+// ...
+const App = () => {
+  return (
+    <div className="App">
+      <ReactPlayer url="https://vimeo.com/channels/top/22439234" playing/>
+    </div>
+  )
+}
+```
+
+- Example of the rendered ReactPlayer on the DOM transpiled by Babel and React Library
+![ReactPlayer] (/assets/reactplayer_example.jpg) 

@@ -2,6 +2,9 @@
 // {React} is the library that allow us to render and create components 
 import React from 'react';
 
+//{ReactPlayer} is a React component added as a npm package
+import ReactPlayer from 'react-player';
+
 /**
  * @function {GreetingMessage} - is a functional component in React
  * @returns a JSX - JS with HTML
@@ -89,6 +92,9 @@ class Color extends React.Component {
 const App = () => {
   return (
     <div className="App">
+      {/* usage of a component pre-build from npm */}
+      <ReactPlayer url="https://vimeo.com/channels/top/22439234" playing/>
+
       {/*is an instance of the class component of React*/}
       <Color favColor="Blue"/>
 
