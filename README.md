@@ -86,4 +86,4 @@ const App = () => {
 
 - Example of the rendered ReactPlayer on the DOM transpiled by Babel and React Library
 
-![ReactPlayer] (assets/reactplayer_example.jpg) 
+![ReactPlayer](assets/reactplayer_example.jpg) 
